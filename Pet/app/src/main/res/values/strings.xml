@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name"> pet</string>
+    <string name="Confirm_password"> Confirm password</string>
+    <string name="username"> Username</string>
+    <string name="Full_Name"> Full Name</string>
+    <string name="signup">" SIGN UP!"</string>
+    <string name="emph">Email or phone number</string>
+    <string name="login">Log in here</string>
+    <string name="Password">Password</string>
+    <string name="Already">Already have an a account?</string>
+    <string name="plz">Please sign in!</string>
+    <string name="Email">Email</string>
+    <string name="Password1">Password</string>
+    <string name="forgot_password">forgot password?</string>
+    <string name="Remember_me">Remember me</string>
+    <string name="dont">Don\'t Have an Account?</string>
+
+</resources>

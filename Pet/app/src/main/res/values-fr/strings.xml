@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Animal de compagnie</string>
+    <string name="Confirm_password">Confirmez le mot de passe</string>
+    <string name="username">Nom d\'utilisateur</string>
+    <string name="Full_Name">Nom et Prénom</string>
+    <string name="signup">S\'INSCRIRE!</string>
+    <string name="emph">Email ou numéro de téléphone</string>
+    <string name="login">Connectez-vous ici</string>
+    <string name="Password">Mot De Passe</string>
+    <string name="Already">Avez Vous déjà un compte ?</string>
+    <string name="plz">Veuillez vous connecter!</string>
+    <string name="Email">E-mail</string>
+    <string name="Password1">Mot de passe</string>
+    <string name="forgot_password">Mot de passe oublié?</string>
+    <string name="Remember_me">Je Te souviens?</string>
+    <string name="dont">N\'as tu pas un compte?</string>
+</resources>

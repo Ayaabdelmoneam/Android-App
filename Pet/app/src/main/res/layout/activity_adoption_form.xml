@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Top bar -->
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#FAE7ED"
+        android:paddingBottom="5dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:clickable="true">
+
+        </ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="List your Pet for Adoption"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFDFE"
+            android:paddingTop="40dp">
+
+            <!-- Add Image -->
+            <ImageButton
+                android:id="@+id/addImageButton"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/add_pet"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Image"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:paddingTop="4dp"
+                >
+
+            </TextView>
+
+
+            <!-- Name -->
+            <EditText
+                android:id="@+id/petNameInput"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:padding="7dp"
+                android:textStyle="bold"
+                android:background="@drawable/border_background"
+                />
+
+
+            <!-- Breed -->
+            <EditText
+                android:id="@+id/petBreedInput"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="Breed"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:padding="7dp"
+                android:textStyle="bold"
+                android:background="@drawable/border_background"
+                />
+
+            <!-- Location -->
+            <EditText
+                android:id="@+id/petLocationInput"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="Location"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:padding="7dp"
+                android:textStyle="bold"
+                android:background="@drawable/border_background"
+                />
+
+<!--            Category-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pet Type"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:paddingTop="7dp"
+                android:layout_marginLeft="20dp"
+                >
+
+            </TextView>
+
+
+            <RadioGroup
+                android:id="@+id/radioGroupPetType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp">
+
+                <RadioButton
+                    android:id="@+id/radioButtonCat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cat"
+                    android:paddingRight="15dp"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioButtonDog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dog"
+                    android:paddingRight="15dp"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioButtonRabbit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rabbit"
+                    android:paddingRight="15dp"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioButtonOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other"
+                    android:paddingRight="15dp"
+                    />
+            </RadioGroup>
+
+
+            <!-- Age -->
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:paddingTop="7dp"
+                android:layout_marginLeft="20dp"
+                >
+
+            </TextView>
+
+
+            <RadioGroup
+                android:id="@+id/radioGroupPetGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp">
+
+                <RadioButton
+                    android:id="@+id/radioButtonFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:paddingRight="15dp"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioButtonMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:paddingRight="15dp"
+                    />
+
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weight (in kgs)"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                </TextView>
+                <!-- Pet Type Dropdown -->
+                <EditText
+                    android:id="@+id/petWeightInput"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="3dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:textStyle="bold"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/border_background"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Age (in years)"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                </TextView>
+                <!-- Pet Type Dropdown -->
+                <EditText
+                    android:id="@+id/petAgeInput"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:hint="0"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="3dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/border_background"/>
+
+
+            </LinearLayout>
+
+
+            <!-- Description -->
+            <EditText
+                android:id="@+id/petDescriptionInput"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="15dp"
+                android:hint="Pet Description"
+                android:inputType="textMultiLine"
+                android:background="@drawable/border_background"
+                android:lines="5"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                />
+
+            <!-- Owner Contact Info -->
+
+            <View
+                android:layout_width="350dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="#EFB6BD" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Owner Contact Info"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                />
+
+            <EditText
+                android:id="@+id/ownerInfoInput"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:hint="Phone (e.g., +1 123-456-7890)"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:padding="7dp"
+                android:textStyle="bold"
+                android:inputType="phone"
+                android:background="@drawable/border_background"
+                />
+
+
+            <ImageView
+                android:id="@+id/SubmitButtonForm"
+                android:layout_width="200dp"
+                android:layout_height="65dp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:layout_margin="20dp"
+                android:src="@drawable/submit" />
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

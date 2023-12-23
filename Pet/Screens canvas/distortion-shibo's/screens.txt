@@ -1,0 +1,6 @@
+1- sign up
+2- log in
+3- homepage
+4- profile
+5- studio
+6- 

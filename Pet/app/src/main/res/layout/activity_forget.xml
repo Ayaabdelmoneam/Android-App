@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForgetActivity">
+
+    <!-- ImageView for the background image -->
+    <ImageView
+        android:id="@+id/backgroundImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/forget_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- ImageView for the forgotcat image -->
+    <ImageView
+        android:id="@+id/forgotCatImageView"
+        android:layout_width="109dp"
+        android:layout_height="236dp"
+        android:src="@drawable/forgotcat"
+        app:layout_constraintBottom_toBottomOf="@id/ohNoTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ohNoTextView"
+        app:layout_constraintVertical_bias="0.277" />
+
+    <!-- "OH NO!" TextView -->
+    <TextView
+        android:id="@+id/ohNoTextView"
+        android:layout_width="265dp"
+        android:layout_height="88dp"
+        android:fontFamily="@font/codecpro"
+        android:text="OH NO!"
+        android:textColor="#FFFF"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/forgotCatImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <!-- Other TextViews -->
+    <TextView
+        android:layout_width="269dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/codecpro"
+        android:text="I FORGOT MY PASS"
+        android:textColor="#FFFF"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.165" />
+
+    <TextView
+        android:layout_width="371dp"
+        android:layout_height="110dp"
+        android:fontFamily="@font/codecpro"
+        android:text="Enter your email, phone, or username and we'll send you a link to set a new password"
+        android:textColor="#005766"
+        android:textSize="29dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.399" />
+
+    <!-- ImageButton for the forgetsend button -->
+    <EditText
+        android:id="@+id/forgottenEmail"
+        android:layout_width="357dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="276dp"
+        android:background="@drawable/borderazra2"
+        android:ems="10"
+        android:hint="    Email or phone number"
+        android:inputType="text"
+        android:textColorHint="#005766"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.703"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintVertical_bias="0.065" />
+
+    <ImageButton
+        android:id="@+id/sendBtn"
+        android:layout_width="283dp"
+        android:layout_height="96dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="56dp"
+        android:background="#FFFDFE"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        app:srcCompat="@drawable/forgetsend" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

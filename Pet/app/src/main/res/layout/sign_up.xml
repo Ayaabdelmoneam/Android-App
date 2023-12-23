@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFDFE"
+    tools:context=".SignUp">
+
+
+    <EditText
+        android:id="@+id/SUname"
+        android:layout_width="357dp"
+        android:layout_height="47dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="@string/Full_Name"
+        android:inputType="text"
+        android:paddingLeft="12dp"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        android:textColorHint="#EFB6BD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SUemail"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <EditText
+        android:id="@+id/SUusername"
+        android:layout_width="357dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="304dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="text"
+        android:paddingLeft="12dp"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        android:textColorHint="#EFB6BD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SUname"
+        app:layout_constraintVertical_bias="0.312" />
+
+    <EditText
+        android:id="@+id/SUconfirmPass"
+        android:layout_width="357dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="168dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="@string/Confirm_password"
+        android:inputType="textPassword"
+        android:paddingLeft="12dp"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        android:textColorHint="#EFB6BD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SUpassword"
+        app:layout_constraintVertical_bias="0.323" />
+
+    <EditText
+        android:id="@+id/SUpassword"
+        android:layout_width="359dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="244dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="@string/Password"
+        android:inputType="textPassword"
+        android:paddingLeft="12dp"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        android:textColorHint="#EFB6BD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SUusername"
+        app:layout_constraintVertical_bias="0.265" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="454dp"
+        android:layout_height="343dp"
+        android:layout_marginBottom="568dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/firozy" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="389dp"
+        android:layout_height="451dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="404dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/new_project__3_" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="211dp"
+        android:layout_height="181dp"
+        android:layout_marginEnd="268dp"
+        android:layout_marginBottom="692dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/paw" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="148dp"
+        android:layout_height="144dp"
+        android:fontFamily="@font/leaguespartan"
+        android:text="@string/signup"
+        android:textColor="@color/white"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.136" />
+
+    <EditText
+        android:id="@+id/SUemail"
+        android:layout_width="357dp"
+        android:layout_height="47dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="@string/emph"
+        android:inputType="text"
+        android:paddingLeft="12dp"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        android:textColorHint="#EFB6BD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.107" />
+
+    <ImageButton
+        android:id="@+id/hiddenEye1"
+        android:layout_width="29dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="28dp"
+        android:background="#FFFDFE"
+        app:layout_constraintBottom_toTopOf="@+id/hiddenEye2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/SUpassword"
+        app:layout_constraintVertical_bias="0.269"
+        app:srcCompat="@drawable/ic_show_pwd" />
+
+    <ImageButton
+        android:id="@+id/hiddenEye2"
+        android:layout_width="29dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="184dp"
+        android:background="#FFFDFE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/SUconfirmPass"
+        app:layout_constraintVertical_bias="0.177"
+        app:srcCompat="@drawable/ic_show_pwd" />
+
+    <ImageButton
+        android:id="@+id/SUsignIn"
+        android:layout_width="283dp"
+        android:layout_height="96dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="56dp"
+        android:background="#FFFDFE"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SUconfirmPass"
+        app:layout_constraintVertical_bias="0.8"
+        app:srcCompat="@drawable/new_project__4_" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="@string/Already"
+        android:textColor="#763941"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SUsignIn"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/SUloginHere"
+        android:layout_width="106dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/log"
+        android:text="@string/login"
+        android:textColor="#BB6570"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.737"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SUsignIn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

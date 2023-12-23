@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/resultbg"
+    tools:context=".ResultActivity">
+
+
+    <ImageView
+        android:id="@+id/meow"
+        android:layout_width="match_parent"
+        android:layout_height="375dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="-30dp"
+        app:srcCompat="@drawable/meow" />
+
+    <ImageView
+        android:id="@+id/white"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="566dp"
+        android:layout_marginRight="0dp"
+        app:srcCompat="@drawable/white" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/codecpro"
+        android:lineSpacingExtra="8dp"
+        android:textStyle="bold"
+        android:text="YOU ARE A CAT LOVER !"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/caticon"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="96dp"
+        app:srcCompat="@drawable/caticon" />
+
+
+    <ImageView
+        android:id="@+id/visitcats"
+        android:layout_width="220dp"
+        android:layout_height="170dp"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="590dp"
+        android:src="@drawable/visitcats" />
+
+
+    <ImageView
+        android:id="@+id/footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-18dp"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/footer" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/home"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/heart"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/heart_button"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/profile"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/add"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/notification"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/notification" />
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
+
+
